@@ -44,7 +44,9 @@ public class IfElseLadder {
 		{
 			System.out.println("\n Wrong input");
 		}
-		
+	
+		s.close();
 	}
+	
 
 }
