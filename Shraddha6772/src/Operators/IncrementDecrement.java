@@ -11,8 +11,12 @@ public class IncrementDecrement {
 		System.out.println("Value of a "+a);
 		System.out.println("Value of b "+b);
 		
+		System.out.println("\n");
+		
 		System.out.println("Value of ++a "+(++a));
 		System.out.println("Value of a "+a);
+		
+		System.out.println("\n");
 		
 		System.out.println("Value of b++ "+(b++));
 		System.out.println("Value of b "+b);
