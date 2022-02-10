@@ -13,6 +13,7 @@ public class SimpleDemo{
 
 	public static void show(int side)
 	{
+		
 		int area = side*side;
 		System.out.println("Area is :" + area);
 	}
