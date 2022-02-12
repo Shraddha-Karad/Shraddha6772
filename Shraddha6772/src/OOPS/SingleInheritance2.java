@@ -25,6 +25,7 @@ class A1
 		System.out.println("Id  : "+ studId);
 		System.out.println("Name : "+ name);
 		
+	
 		System.out.println();
 	}
 	
