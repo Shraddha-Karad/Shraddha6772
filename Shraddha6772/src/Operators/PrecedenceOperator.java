@@ -13,7 +13,7 @@ public class PrecedenceOperator {
 		 	  5+15
 		 	  20
 		 */
-		
+		System.out.println(cal);
 		
 		cal = d/a*c-b;
 		/*  = 10/5*8-12
@@ -22,6 +22,7 @@ public class PrecedenceOperator {
 		      4
 		 */
 		
+		System.out.println(cal);
 		
 		cal = d++*2+(++c)/a;
 		/*  = 10++*2+(++8)/5

@@ -48,5 +48,4 @@ public class IfElseLadder {
 		s.close();
 	}
 	
-
 }
