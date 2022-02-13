@@ -1,5 +1,7 @@
 package Interface_Abstract;
 
+// Inheritance achieved by using Default
+
 class AAA{
 	public void display()
 	{

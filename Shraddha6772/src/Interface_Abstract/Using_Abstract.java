@@ -1,5 +1,7 @@
 package Interface_Abstract;
 
+// Multiple Inheritance achieved by using AAbstract
+
 abstract class ABC
 {
 	int a;
