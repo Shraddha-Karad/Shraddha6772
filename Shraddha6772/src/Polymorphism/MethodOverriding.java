@@ -1,4 +1,4 @@
-package OOPS;
+package Polymorphism;
 
 class Animal{
 	
