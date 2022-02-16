@@ -12,7 +12,7 @@ public class Exception1 {
 		int a = 100/0;
 		
 		System.out.println("Edubring");
-		System.out.println("");
+		System.out.println("Batch 6772");
 		
 		
 	}
