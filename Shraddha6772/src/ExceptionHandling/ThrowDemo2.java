@@ -13,11 +13,15 @@ class ThrowDemo2 extends Exception {
 }
 
 class Example1 {
+
 	public static void main(String args[]) {
-		try {
+		try 
+		{
 			System.out.println("Starting of try block");
 			throw new ThrowDemo2("This is My error Message");
-		} catch (ThrowDemo2 exp) {
+		}
+		catch (ThrowDemo2 exp) 
+		{
 			System.out.println("Catch Block");
 			System.out.println(exp);
 		}

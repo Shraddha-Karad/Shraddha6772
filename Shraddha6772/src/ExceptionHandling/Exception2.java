@@ -1,20 +1,6 @@
 package ExceptionHandling;
 
-public class Exception2 {
+public class Exception2 extends Exception {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		/*public void input()
-		{
-			System.out.println();
-		}*/
-		
-		
-		
-		Exception ex = new Exception();
-		//ex.input();
-		
-	}
 
 }
