@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments_Array;
 /*Write a Java Program to remove a particular element from an array. 
  * [Solution : Program : Remove an Element from int Array in Java]
  */

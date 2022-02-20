@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments_Array;
 /*Write a Java Program to reverse the array contents. [Solution: Program: Java Code to Reverse an int Array]
 */
 

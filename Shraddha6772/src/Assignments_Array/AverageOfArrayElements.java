@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments_Array;
 import java.util.Scanner;
 /*Scanner sc = new Scanner(System.in);
 		System.out.print("Enter how many elements you want to strore in Array : ");

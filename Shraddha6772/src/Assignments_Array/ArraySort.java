@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments_Array;
 import java.util.Scanner;
 /*Create a Java Program to Sort an Array of Numeric or String Data. 
  [Solution : Program : Sort an Array in Java]
@@ -13,25 +13,31 @@ public class ArraySort {
 		int n = sc.nextInt();
 		
 		int[] arr = new int[n];
-		int temp;
 		
-		for(int i = 0; i < 5; i++)
+		for(int i=0; i<n; i++){
+			System.out.println("Enter the "+i+"th Element : ");
+			arr[i] = sc.nextInt();
+		}
+		
+		for(int i = 0; i < n; i++)
 		{
-			for(int j=0; j<4-i;j++)
+			for(int j=i+1; j<n;j++)
 			{
-				if(arr[j] < arr[j+1])
+				int temp=0;
+				if(arr[i] > arr[j])
 				{
-					temp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1]=temp;
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j]=temp;
 				}
 			}
 				
 		}
 		
-		for(int k =0; k<5; k++)
+		System.out.println("\n ------Sorted Array------ ");
+		for(int k =0; k<n; k++)
 		{
-			System.out.println(arr[k]);
+			System.out.print(arr[k]+"\t");
 		}
 		
 		
