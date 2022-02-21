@@ -40,5 +40,16 @@ public class CopyArray {
 		System.out.println("\n------------------------------------------------------");
 		System.out.println("\nActualArray copied into CopyArray Successfully !");
 	}
+	
+	
+	//Method 2
+	
+	/*
+	  System.out.println(arr1,0,arr2,0,arr1.length);
+	 
+	 */
+	
+	
+	
 
 }
