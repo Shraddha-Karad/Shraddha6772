@@ -18,6 +18,6 @@ public class ArrayReturnDemo {
 		// call method return_array that returns array
 		String[] str_Array = return_Array();
 		
-		System.out.println("Array returned from method:" + Arrays.toString(str_Array));
+		System.out.println("Array returned from method:\n" + Arrays.toString(str_Array));
 	}
 }

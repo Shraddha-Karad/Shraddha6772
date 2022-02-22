@@ -1,9 +1,9 @@
 package Assignments_Array;
+import java.util.Arrays;
 import java.util.Scanner;
 /*Create a Java Program to Sort an Array of Numeric or String Data. 
  [Solution : Program : Sort an Array in Java]
  */
-
 public class ArraySort {
 
 	public static void main(String[] args) {
@@ -11,7 +11,6 @@ public class ArraySort {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter how many elements you want to strore in Array : ");
 		int n = sc.nextInt();
-		
 		int[] arr = new int[n];
 		
 		for(int i=0; i<n; i++){
@@ -31,7 +30,6 @@ public class ArraySort {
 					arr[j]=temp;
 				}
 			}
-				
 		}
 		
 		System.out.println("\n ------Sorted Array------ ");
@@ -40,6 +38,8 @@ public class ArraySort {
 			System.out.print(arr[k]+"\t");
 		}
 		
+		//Method 2
+		//Arrays.sort(arr);
 		
 		sc.close();
 		

@@ -5,9 +5,7 @@ class MyException2 extends Exception {
 	public MyException2(String msg)
 	{
 		super(msg);
-		
 	}
-	
 }
 class Shraddha extends Exception{
 	public Shraddha(String msg){

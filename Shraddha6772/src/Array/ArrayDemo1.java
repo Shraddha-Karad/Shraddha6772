@@ -19,11 +19,11 @@ public class ArrayDemo1 {
 			array[i] = sc.nextInt();
 		}
 		
-		System.out.println("Entered Elements are ");
+		System.out.println("\nEntered Elements are ");
 		
 		for(int i = 0; i < array.length; i++)
 		{
-			System.out.println(array[i]);
+			System.out.print(array[i]+"\t");
 		}
 		
 	}

@@ -18,9 +18,7 @@ public class MaximumOccurenceInString {
 					ch[j] = '0';
 				}
 			}
-
 		}
-
 		for (int i = 0; i < cnt.length; i++) {
 			if (ch[i] != ' ' && ch[i] != '0') {
 //				System.out.println(ch[i] + "=" + cnt[i]);
