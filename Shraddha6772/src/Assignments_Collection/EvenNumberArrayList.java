@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
-import Collection.Demo01;
 
 /*
   Develop a java class with a method saveEvenNumbers(int N)
@@ -26,7 +25,7 @@ import Collection.Demo01;
   ArrayList A1 and A2.
 NOTE: You can test the methods using a main method.
 */
-public class QueA1 {
+public class EvenNumberArrayList {
 
 ArrayList<Integer> A1 = new ArrayList<Integer>();
 	
@@ -53,10 +52,9 @@ ArrayList<Integer> A1 = new ArrayList<Integer>();
 		
 		}
 		
-		for(int j : A1)
+		for(int j=0;j< A2.size();j++)
 		{	
 			b = (A2.get(j));
-			System.out.println("Pointer at Element is : "+A2.get(j));
 			
 			if(a == b)
 			{
@@ -73,7 +71,7 @@ ArrayList<Integer> A1 = new ArrayList<Integer>();
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		QueA1 q1 = new QueA1();
+		EvenNumberArrayList q1 = new EvenNumberArrayList();
 		
 		int b = 0;
 		System.out.println("Enter a Number : ");
@@ -83,15 +81,16 @@ ArrayList<Integer> A1 = new ArrayList<Integer>();
 		
 		System.out.println("Enter the Number to search in the List : ");
 		int a = sc.nextInt();
-		a = q1.printEvenNumbers(a);
-		
+		System.out.println("------------------------------------------------");
+		b = q1.printEvenNumbers(a);
+		System.out.println();
 		if(b != 0)
 		{
-			System.out.println(b+" Exists in List !");
+			System.out.println(a+" Exists in List !");
 		}
 		else
 		{
-			System.out.println(b+" Doesn't Exist in List !");
+			System.out.println(a+" Doesn't Exist in List !");
 		}
 	}
 }
