@@ -3,9 +3,11 @@ package Assignments_Array;
  * [Solution : Program : Remove an Element from int Array in Java]
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class RemoveArrayElement {
+
 
 	public static void main(String[] args) {
 
@@ -24,12 +26,9 @@ public class RemoveArrayElement {
 		System.out.println("Enter the Element to remove from Array : ");
 		int n1 = sc.nextInt();
 		
-		for(int i=0; i<n; i++)
+		for(int i=n1; i<n-1; i++)
 		{
-			if(arr[i] == n1)
-			{
-				arr[i] = 0;
-			}
+			arr[i] = arr[i]+1;
 		}
 		
 		System.out.println("Array after removing the enterred element : ");
