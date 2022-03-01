@@ -1,47 +1,31 @@
 package MultiThreading;
 
- class A extends Thread
-{
-	public void run()
-	{
+class A extends Thread {
+	public void run() {
 		System.out.println("Thread A is Started ");
-		for(int i = 1; i<=10;i++)
-		{
-			try{
-				Thread.sleep(2000);
-				
-			}
-			catch(InterruptedException e)
-			{
-				e.printStackTrace();
-			}
-			System.out.println("Value of i in Thread A "+i);
+		for (int i = 1; i <= 10; i++) {
+			
+			System.out.println("Value of i in Thread A " + i);
 		}
 		System.out.println("Thread A Exit !");
 	}
 }
 
-class B extends Thread
-{
-	public void run()
-	{
+class B extends Thread {
+	public void run() {
 		System.out.println("Thread B is Started ");
-		for(int i = 1; i<=10;i++)
-		{
-			System.out.println("Value of i in Thread B "+i);
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("Value of i in Thread B " + i);
 		}
 		System.out.println("Thread B Exit !");
 	}
 }
 
-class C extends Thread
-{
-	public void run()
-	{
+class C extends Thread {
+	public void run() {
 		System.out.println("Thread C is Started ");
-		for(int i = 1; i<=10;i++)
-		{
-			System.out.println("Value of i in Thread C "+i);
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("Value of i in Thread C " + i);
 		}
 		System.out.println("Thread C Exit !");
 	}
@@ -50,16 +34,15 @@ class C extends Thread
 public class Demo1 {
 
 	public static void main(String[] args) {
-		
-		A a = new A();   //New Born State
+
+		A a = new A(); // New Born State
 		B b = new B();
 		C c = new C();
 
-		a.start();       // Runnable State Or Ready to run
+		a.start(); // Runnable State Or Ready to run
 		b.start();
 		c.start();
-	
+
 	}
-	
-	
+
 }
