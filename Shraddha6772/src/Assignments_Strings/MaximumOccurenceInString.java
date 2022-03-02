@@ -1,10 +1,12 @@
 package Assignments_Strings;
-
+/*
+ * Write a Java program to find the maximum occurring character in a string. 
+ */
 public class MaximumOccurenceInString {
 
 	public static void main(String[] args) {
 
-		String s1 = "ahjn sdgjjj ";
+		String s1 = "abbc ";
 		int[] cnt = new int[s1.length()];
 
 		char[] ch = s1.toCharArray();

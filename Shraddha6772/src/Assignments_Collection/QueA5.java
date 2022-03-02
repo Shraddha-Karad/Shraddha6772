@@ -55,9 +55,7 @@ public class QueA5 {
 				System.out.println(emp);
 				System.out.println("employee id " + searchId + " present in the List !");
 			}
-
 		}
-
 		// System.out.println(al.contains(emp.getId()));
 
 	}

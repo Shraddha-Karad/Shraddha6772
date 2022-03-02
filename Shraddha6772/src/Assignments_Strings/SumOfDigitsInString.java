@@ -1,5 +1,13 @@
 package Assignments_Strings;
+/*
+ *  Write a Java program to calculate the sum of the numbers appear in a given string. 
 
+Sample Output:
+
+The given string is: it 15 is25 a 20string
+The sum of numbers in the string is: 60
+
+ */
 public class SumOfDigitsInString {
 
 	public static void main(String[] args) {
@@ -22,7 +30,7 @@ public class SumOfDigitsInString {
 			}
 		}
 	
-		System.out.println(add+Integer.parseInt(s1));
+		System.out.println("The Sum of numbers in the String is : "+(add+Integer.parseInt(s1)));
 		
 	}
 

@@ -14,8 +14,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
-
-public class QueB1 {
+public class QueA9 {
 
 	HashMap<String, String> M1 = new HashMap<String, String>();
 
@@ -31,7 +30,7 @@ public class QueB1 {
 		Scanner sc = new Scanner(System.in);
 		HashMap<String, String> M2 = new HashMap();
 
-		QueB1 obj = new QueB1();
+		QueA9 obj = new QueA9();
 		
 		String s1=null, s2 = null;
 
@@ -66,5 +65,24 @@ public class QueB1 {
 		}
 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

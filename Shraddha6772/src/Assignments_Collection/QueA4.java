@@ -1,4 +1,5 @@
 package Assignments_Collection;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -9,7 +10,7 @@ import java.util.Iterator;
 
 public class QueA4 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		ArrayList<Object> list = new ArrayList<Object>();
 		
@@ -31,10 +32,9 @@ public class QueA4 {
 			}
 			else
 			{
-				System.out.println("Invalid data");
+				System.out.println("Invalid Data Entered so Exception Occured !");
+				throw new IOException();
 			}
-			
-			System.out.println(el);
 		}
 		
 	}

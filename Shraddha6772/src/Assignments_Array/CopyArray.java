@@ -1,7 +1,9 @@
 package Assignments_Array;
-
+/*
+ * Create a Java code to copy an Array into another array. 
+ * [Solution: Java Code to Copy Array into
+ */
 import java.util.Scanner;
-
 public class CopyArray {
 
 	public static void main(String[] args) {
@@ -11,45 +13,39 @@ public class CopyArray {
 		int n = sc.nextInt();
 		int[] actual = new int[n];
 		int[] copy = new int[n];
-		
-		for(int i=0; i<n; i++){
-			System.out.println("Enter the "+i+"th Element : ");
+
+		for (int i = 0; i < n; i++) {
+			System.out.println("Enter the " + i + "th Element : ");
 			actual[i] = sc.nextInt();
 		}
-		
+
 		System.out.println("------------------------------------------------------");
 		System.out.println("Entered Array is : ");
-		
-		for(int i = 0; i < n; i++){
-			System.out.print(actual[i]+"\t");
+
+		for (int i = 0; i < n; i++) {
+			System.out.print(actual[i] + "\t");
 		}
-		
+
 		System.out.println("\n------------------------------------------------------");
-		for(int i=0;i<n;i++){
-			
+		for (int i = 0; i < n; i++) {
 			copy[i] = actual[i];
-			
+
 		}
-		
+
 		System.out.println("\nCopied Array is : ");
-		for(int i=0;i<n;i++)
-		{
-			System.out.print(copy[i]+"\t");
+		for (int i = 0; i < n; i++) {
+			System.out.print(copy[i] + "\t");
 		}
-		
+
 		System.out.println("\n------------------------------------------------------");
 		System.out.println("\nActualArray copied into CopyArray Successfully !");
 	}
-	
-	
-	//Method 2
-	
+
+	// Method 2
+
 	/*
-	  System.out.println(arr1,0,arr2,0,arr1.length);
-	 
+	 * System.out.println(arr1,0,arr2,0,arr1.length);
+	 * 
 	 */
-	
-	
-	
 
 }

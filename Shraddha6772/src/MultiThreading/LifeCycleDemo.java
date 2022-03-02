@@ -1,6 +1,5 @@
 package MultiThreading;
-
-class One implements Runnable {
+class A2 implements Runnable {
 	public void run() {
 		System.out.println("Thread One is Started ");
 		for (int i = 1; i <= 10; i++) {
@@ -10,7 +9,7 @@ class One implements Runnable {
 	}
 }
 
-class Two implements Runnable {
+class B2 implements Runnable {
 	public void run() {
 		System.out.println("Thread Two is Started ");
 		for (int i = 1; i <= 10; i++) {
@@ -20,7 +19,7 @@ class Two implements Runnable {
 	}
 }
 
-class Three implements Runnable {
+class C2 implements Runnable {
 	public void run() {
 		System.out.println("Thread Three is Started ");
 		for (int i = 1; i <= 10; i++) {
@@ -30,20 +29,29 @@ class Three implements Runnable {
 	}
 }
 
-public class Demo2 {
-
+public class LifeCycleDemo {
 	public static void main(String[] args) {
 
-		One o = new One(); // New Born State
-		Two t = new Two();
-		Three th = new Three();
+		A2 o = new A2(); // New Born State
+		B2 t = new B2();
+		C2 th = new C2();
 
 		Thread t1 = new Thread(o);
 		Thread t2 = new Thread(t);
 		Thread t3 = new Thread(th);
 
 		t1.start();
-		t2.start();
+		try {
+			t1.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		t2.suspend();
+		for (int z = 0; z < 10; z++) {
+			if (z == 5)
+				t2.resume();
+			System.out.println("Value of z : " + z);
+		}
 		t3.start();
 
 	}

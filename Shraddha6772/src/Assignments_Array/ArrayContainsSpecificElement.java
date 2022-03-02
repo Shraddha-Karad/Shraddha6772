@@ -1,5 +1,4 @@
 package Assignments_Array;
-
 import java.util.Scanner;
 
 /*Write a Java Program to check if see if Array contains a specific value. 
@@ -22,7 +21,6 @@ public class ArrayContainsSpecificElement {
 			System.out.println("Enter the "+i+"th Element");
 			arr[i] = sc.nextInt();
 		}
-		
 		System.out.println("Enter an element to check whether array contains in it : ");
 		int n1 = sc.nextInt();
 		boolean flag = false;
@@ -37,10 +35,10 @@ public class ArrayContainsSpecificElement {
 		
 		if(flag == true)
 		{
-			System.out.println("Array contain the Entered Element :) ");
+			System.out.println("Array contain the Entered Element ! ");
 		}
 		else{
-			System.out.println("Array does not contain the Entered Element :( ");
+			System.out.println("Array does not contain the Entered Element ! ");
 		}
 	}
 

@@ -1,5 +1,4 @@
 package Assignments_Collection;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -36,7 +35,7 @@ ArrayList<Integer> A1 = new ArrayList<Integer>();
 		for (int i = 2; i <= N; i++) {
 			if (i % 2 == 0) A1.add(i);
 		}
-		
+		System.out.println(A1);
 		return A1;
 	}
 	
@@ -46,12 +45,13 @@ ArrayList<Integer> A1 = new ArrayList<Integer>();
 		boolean flag = false;
 		int b = 0;
 		
+		System.out.print("[");
 		for (int j : A1) {
 			A2.add(j * 2);
-			System.out.println(j * 2);
+			System.out.print(j * 2+", ");
 		
 		}
-		
+		System.out.println("]");
 		for(int j=0;j< A2.size();j++)
 		{	
 			b = (A2.get(j));
@@ -81,7 +81,8 @@ ArrayList<Integer> A1 = new ArrayList<Integer>();
 		
 		System.out.println("Enter the Number to search in the List : ");
 		int a = sc.nextInt();
-		System.out.println("------------------------------------------------");
+		System.out.println("----------------------------------------");
+		System.out.println("After Multiplying Each number by 2 : ");
 		b = q1.printEvenNumbers(a);
 		System.out.println();
 		if(b != 0)

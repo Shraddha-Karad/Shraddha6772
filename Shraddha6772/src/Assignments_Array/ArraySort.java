@@ -5,7 +5,6 @@ import java.util.Scanner;
  [Solution : Program : Sort an Array in Java]
  */
 public class ArraySort {
-
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -17,7 +16,6 @@ public class ArraySort {
 			System.out.println("Enter the "+i+"th Element : ");
 			arr[i] = sc.nextInt();
 		}
-		
 		for(int i = 0; i < n; i++)
 		{
 			for(int j=i+1; j<n;j++)

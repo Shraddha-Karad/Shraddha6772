@@ -1,6 +1,7 @@
 package Assignments_Strings;
 /*
- Write a Java program to check whether the character immediately before and after a specified character is same in a given string. 
+ Write a Java program to check whether the character immediately before and after a specified 
+ character is same in a given string. 
  Sample Output:
  The given string is: moon#night
  The before and after character are same: true
@@ -11,7 +12,7 @@ public class SpecifiedCharacter {
 	public boolean leftAndRightSame(String stng) 
 	{
 	  int l = stng.length();
-	  boolean found = true;
+	  boolean found = false;
 	  for (int i = 0; i < l; i++) 
 	  {
 	    String tmpString = stng.substring(i,i+1);
@@ -32,32 +33,7 @@ public class SpecifiedCharacter {
 	      System.out.println("The given string is: "+str1);
 	      System.out.println("The before and after character are same: "+m.leftAndRightSame(str1));
 		  }
-	}
-	
-
-	
-	
-	
-	
-	/*
-	public static void main(String[] args) {
-
-		String s1 = "moon@night";
-		String[] s2 = s1.split("@");
-		
-//		for(int i = 0; i<s1.length();i++)
-//		{
-//			if(!(s1.charAt(i) == '@'))
-//			{
-//				s2 = s2+s1;
-//			}
-//			else
-//				break;
-//		}
-		System.out.println(s2);
-		
-		
-	}
-
 }
-*/
+	
+
+	

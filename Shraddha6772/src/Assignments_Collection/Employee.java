@@ -1,5 +1,4 @@
 package Assignments_Collection;
-
 /*
  Create an Employee class with the related attributes and
  behavior. Create one more class EmployeeDB which has the
@@ -11,21 +10,18 @@ package Assignments_Collection;
  functionalities are operational.
 */
 
-class Employee{
-	
-	private int eCode; 
+class Employee {
+
+	private int eCode;
 	private String eName;
 	private char eGender;
 	private double eSalary;
-	
-	
-	public String displayEmp(){
-		
-		return "Employee [eCode=" + eCode + ", eName=" + eName + ", eGender="
-				+ eGender + ", eSalary=" + eSalary + "]";
+
+	public String displayEmp() {
+
+		return "Employee [eCode=" + eCode + ", eName=" + eName + ", eGender=" + eGender + ", eSalary=" + eSalary + "]";
 	}
-	
-	
+
 	public Employee(int eCode, String eName, char eGender, double eSalary) {
 		super();
 		this.eCode = eCode;
@@ -33,34 +29,37 @@ class Employee{
 		this.eGender = eGender;
 		this.eSalary = eSalary;
 	}
-	
-	
-	
+
 	public int geteCode() {
 		return eCode;
 	}
+
 	public void seteCode(int empId) {
 		eCode = empId;
 	}
+
 	public String geteName() {
 		return eName;
 	}
+
 	public void seteName(String empName) {
 		eName = empName;
 	}
+
 	public char geteGender() {
 		return eGender;
 	}
+
 	public void seteGender(char eGender) {
 		this.eGender = eGender;
 	}
+
 	public double geteSalary() {
 		return eSalary;
 	}
+
 	public void seteSalary(float eSalary) {
 		this.eSalary = eSalary;
 	}
-	
-	
-	
+
 }

@@ -1,5 +1,7 @@
 package Assignments_Strings;
-
+/*
+ *Write a Java program to print the frequency of each character in a string
+ */
 public class FrequencyOfCharacters {
 
 	public static void main(String[] args) {

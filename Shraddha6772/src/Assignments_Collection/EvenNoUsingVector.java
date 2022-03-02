@@ -1,5 +1,4 @@
 package Assignments_Collection;
-
 /*
 Develop a java class with a method saveEvenNumbers(int N)
 using Vector to store even numbers from 2 to N, where N is a

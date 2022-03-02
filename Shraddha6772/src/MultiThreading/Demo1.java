@@ -1,5 +1,7 @@
 package MultiThreading;
 
+import java.lang.reflect.GenericArrayType;
+
 class A extends Thread {
 	public void run() {
 		System.out.println("Thread A is Started ");
@@ -39,6 +41,9 @@ public class Demo1 {
 		B b = new B();
 		C c = new C();
 
+		int f = a.getPriority();
+		b.setPriority(f);
+		
 		a.start(); // Runnable State Or Ready to run
 		b.start();
 		c.start();
