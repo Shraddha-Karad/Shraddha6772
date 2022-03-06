@@ -49,6 +49,8 @@ class ThreadPriorityDemo {
 		threadA.start();
 		System.out.println("Start Thread C");
 
+		threadB.start();
+		
 		threadC.start();
 		System.out.println("Exit from main thread ");
 
