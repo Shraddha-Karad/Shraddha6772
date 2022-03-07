@@ -1,4 +1,4 @@
-package Collection;
+package JavaSE8;
 
 import java.util.ArrayList;
 import java.util.Collections;
