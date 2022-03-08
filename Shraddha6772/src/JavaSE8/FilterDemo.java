@@ -20,7 +20,7 @@ public class FilterDemo {
 		
 		Stream<Integer> obj = list.stream();
 		
-		// obj.forEach(e->System.out.println(e));;
+//		obj.forEach(e->System.out.println(e));;
 		
 		List<Integer> l2 = list.stream().filter(e -> e > 44).collect(Collectors.toList());
 		
