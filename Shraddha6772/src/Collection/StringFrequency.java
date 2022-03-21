@@ -11,7 +11,7 @@ public class StringFrequency {
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("code");
 		list.add("code");
-		list.add("quiz");
+		list.add("java");
 		list.add("code");
 
 		// count the frequency of the word "code"
