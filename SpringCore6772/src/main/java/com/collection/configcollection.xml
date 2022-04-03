@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean class="com.collection.Employee" id="employee">
+		<property name="empId" value="101" />
+		<property name="hobbies"  >
+			<list>
+				<value>Listening to music</value>
+				<value>Playing games</value>
+				<value>Cooking</value>
+			</list>
+		</property>
+		
+		
+		<property name="contacts" >
+			<set>
+				<value>8546214752</value>
+				<value>9547216345</value>
+			</set> 
+		</property>
+		
+		<property name = "mobile">
+			<map>
+				<entry key="Samsung" value="45000.8"/>
+				<entry key="MotoRola" value="650000.9"/>
+			</map>
+	 	</property>
+
+		<property name="address" ref="add"/>
+		
+
+	</bean>
+
+
+	<bean class="com.collection.Address" id="add">
+		<property name="city" value="Pune" />
+		<property name="state" value="Maharashtra" />
+	</bean> 
+
+
+</beans>
