@@ -21,3 +21,4 @@ public class ArrayReturnDemo {
 		System.out.println("Array returned from method:\n" + Arrays.toString(str_Array));
 	}
 }
+

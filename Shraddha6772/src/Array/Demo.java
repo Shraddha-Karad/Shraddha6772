@@ -31,7 +31,7 @@ public class Demo {
 			e.printStackTrace();
 		}
 		
-		
+
 		
 //		Scanner s = new Scanner(System.in);
 //		

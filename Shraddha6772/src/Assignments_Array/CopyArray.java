@@ -31,7 +31,7 @@ public class CopyArray {
 			copy[i] = actual[i];
 
 		}
-
+			
 		System.out.println("\nCopied Array is : ");
 		for (int i = 0; i < n; i++) {
 			System.out.print(copy[i] + "\t");

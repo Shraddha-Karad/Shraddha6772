@@ -19,4 +19,4 @@ public class MethodReferenceToIntanceMethod {
 		Car3 car = new Car3();
 		Engine3 obj4 = car::wheel;
 	}
-}
+}	

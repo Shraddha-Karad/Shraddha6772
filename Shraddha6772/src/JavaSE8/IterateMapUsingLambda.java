@@ -19,7 +19,7 @@ public class IterateMapUsingLambda {
 		 * {
 		 * 
 		 * System.out.println("Fruit: " + entry.getKey() + ", Price: " +
-		 * entry.getValue())
+		 * entry.getValue())	
 		 * 
 		 * }
 		 */

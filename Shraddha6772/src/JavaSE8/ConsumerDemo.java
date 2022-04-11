@@ -10,4 +10,4 @@ public class ConsumerDemo {
 		con.accept("Hello World");
 	}
 
-}
+}	

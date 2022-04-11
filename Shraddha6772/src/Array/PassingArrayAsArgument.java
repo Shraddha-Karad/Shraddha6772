@@ -21,4 +21,4 @@ public class PassingArrayAsArgument {
 		printArray(intArray); 
 
 	}
-}
+}		
