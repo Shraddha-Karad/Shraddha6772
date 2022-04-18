@@ -15,6 +15,7 @@ class JDBCDemo1 {
 			
 //			String query = "create table Employee(id int, name varchar(20))";
 			
+
 			String query1 = "delete from Employee where id = 3";
 				
 			stmt.executeUpdate(query1);

@@ -18,7 +18,6 @@ public class Demo2 {
 //			st.executeUpdate(s);
 			st.executeUpdate("insert into Student1 values(3,'Ramya','Mumbai')");
 			
-			
 			ResultSet rs = st.executeQuery("delete from Student1 where id=3");
 			while(rs.next())
 			{
