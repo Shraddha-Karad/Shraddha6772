@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<section class="banner1">
+		<!-- class="banner1" -->
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 offset-md-3">
+
+					<div class="my-card mt-2">
+
+						<div class="container text-center">
+							<img src="" style="width:80px;" th:src="@{/img/add-user.png}">
+						<h1 class="text-center">Register Here</h1>
+						</div>
+						
+						<div th:if="${session.message}" th:classappend="${session.message.type}" class="alert alert-primary" role="alert">
+						<p class="text-center" th:text="${session.message.content}"></p>
+						<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+						</div>
+
+						<form novalidate action="" th:action="@{/do_register}" method="post" th:object="${student}">
+
+							<div class="form-group">
+								<label for="name_field">Your name</label> 
+								<input
+									name="studentName" 
+									type="text"
+									class="form-control"
+									th:classappend="${#fields.hasErrors('studentName') ? 'is-invalid' : ''}"
+									id="name_field"
+									aria-describedby="emailHelp" 
+									placeholder="Enter Your Name"
+									required
+									th:value="${student.studentName}"/>
+									
+									<div class="invalid-feedback" th:each="e : ${#fields.errors('studentName')}" th:text="${e}">
+      								</div>
+									
+							</div>
+
+
+							<div class="form-group">
+								<label for="email_field">Your Email</label> 
+								<input 
+									name="studentEmail"
+									type="email"
+									class="form-control" id="email_field"
+									aria-describedby="emailHelp" placeholder="Enter Your Email"
+									required
+									th:value="${student.studentEmail}"/>
+							</div>
+
+							<div class="form-group">
+								<label for="password_field">Your Password</label>
+								 <input
+								 name="password"
+									type="password" class="form-control" id="password_field"
+									aria-describedby="emailHelp" placeholder="Enter Your Password"
+									required>
+							</div>
+
+							<div class="form-group">
+								<label for="contact_field">Your Contact</label>
+								 <input
+									name="studentContact"
+									type="text" class="form-control" id="contact_field"
+									aria-describedby="emailHelp" placeholder="Enter Your Contact"
+									required
+									th:value="${student.studentContact}"/>
+							</div>
+
+							<div class="custome_file">
+								<label for="image_field">Your Image</label>
+								 <input
+									name="imageURL"
+									type="file" placeholder="Upload Your Image"
+									required
+									th:value="${student.imageURL}"/>
+							</div>
+
+							<div class="form-group form-check">
+							<input 
+							type="checkbox"
+							name="agreement"
+							class="form-check-input"
+							id="agreement"/>
+							
+							<label for="agreement" >Accept terms and conditions</label>
+							</div>
+
+
+							<div class="container text-center">
+
+								<button type="submit"
+									class="btn bg-primary btn-block text-white">
+									<!-- bg-primary btn-block text-white -->
+									Submit
+								</button>
+								<button type="reset"
+									class="btn btn-warning bg-primary btn-block text-white">
+									Reset</button>
+
+
+							</div>
+
+
+						</form>
+
+
+
+
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

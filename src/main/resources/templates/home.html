@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+
+
+</head>
+<body>
+
+	<section
+		class="banner text-center justify-content-center align-items-center">
+		<!-- d-flex justify-content-center   -->
+
+
+		<!-- <div class="align-items-center" style="opacity: 0.9"> -->
+		<br><br><br>
+			<h1 class="font-weight-bold head mt-0">Student Management System</h1>
+			<h6 style="color: white;">we are building a website for students
+				to enroll into courses.</h6>
+
+			<form class="form mb-4" th:action="@{/signin}">
+				<button class="btn btn-primary btn-lg">Get Started</button>
+			</form>
+		<!-- </div> -->
+
+
+		<div class="container1">
+			<div class="d1">
+			<a th:href="@{/signin}">
+				<img src="" style="height: 200px; width: 300px;"
+					class="my_profile_picture" th:src="@{'../img/students.jpg'}"
+					alt="profile photo" /></a>
+				<div class="centered">STUDENT</div>
+			</div>
+			
+			<div class="d2">
+				<a th:href="@{/course_list}"> <img style="height: 200px; width: 300px;"
+					class="my_profile_picture" th:src="@{'../img/pic1.jpg'}"
+					alt="profile photo" /></a>
+				<div class="centered2">
+				COURSES</div>
+			</div>
+			
+			<div class="d3">
+				<a th:href="@{/book_list}">
+				<img src="" style="height: 200px; width: 300px;"
+					class="my_profile_picture" th:src="@{'../img/books.jpg'}"
+					alt="profile photo" /></a>
+				<div class="centered3">BOOKS</div>
+			</div>
+
+		</div>
+
+	</section>
+
+</body>
+</html>
