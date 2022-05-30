@@ -30,7 +30,7 @@ public class CourseList {
 	private double courseDuration;
 	@Column(length=500)
 	private String courseDescription;
-	private String courseProfile;
+//	private String courseProfile;
 	
 	
 	  @ManyToOne private Student student;
@@ -39,8 +39,7 @@ public class CourseList {
 	@Override
 	public String toString() {
 		return "CourseList [courseId=" + courseId + ", courseName=" + courseName + ", courseFee=" + courseFee
-				+ ", courseDuration=" + courseDuration + ", courseDescription=" + courseDescription + ", courseProfile="
-				+ courseProfile + ", student=" + student + "]";
+				+ ", courseDuration=" + courseDuration + ", courseDescription=" + courseDescription + ", student=" + student + "]";
 	}
 	
 	

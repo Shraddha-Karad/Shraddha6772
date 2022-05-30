@@ -46,21 +46,7 @@
 					<!-- 		<td th:text="${c.courseFee}"></td> -->
 							<td th:text="${c.courseDuration}"></td>
 							<td th:text="${c.courseDescription}"></td>
-							<!-- <td><a href="#" style="display: inline;"
-								th:onclick="|deleteCourse(${c.courseId})|"
-								class="btn btn-primary btn-sm"><i
-									class="fa-solid fa-trash-can"> </i></a>
-
-								<form style="display: inline;" method="post"
-									th:action="@{'/student/update-course/'+${c.courseId}}"
-									class="mt-2">
-
-									<button class="btn btn-danger btn-sm">
-										<i class="fa-solid fa-pencil"></i>
-									</button>
-
-
-								</form></td> -->
+							
 						</tr>
 
 					</tbody>
@@ -96,3 +82,21 @@
 
 </body>
 </html>
+
+
+
+<!-- <td><a href="#" style="display: inline;"
+								th:onclick="|deleteCourse(${c.courseId})|"
+								class="btn btn-primary btn-sm"><i
+									class="fa-solid fa-trash-can"> </i></a>
+
+								<form style="display: inline;" method="post"
+									th:action="@{'/student/update-course/'+${c.courseId}}"
+									class="mt-2">
+
+									<button class="btn btn-danger btn-sm">
+										<i class="fa-solid fa-pencil"></i>
+									</button>
+
+
+								</form></td> -->

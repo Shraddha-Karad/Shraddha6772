@@ -136,7 +136,6 @@ public class StudentController {
 
 		Pageable pageable = PageRequest.of(page, 5);
 
-//		Page<Course> courses = this.courseRepository.findCourseByStudent(student.getStudentId(), pageable);
 
 		Page<CourseList> courses = this.courseListRepository.findCourseByStudent(student.getStudentId(), pageable);
 		
